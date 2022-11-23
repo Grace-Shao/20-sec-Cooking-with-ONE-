@@ -20,7 +20,12 @@ public class Player : MonoBehaviour
         // 0 = right mouse click
         if (Input.GetMouseButtonDown(0))
         {
-
+            Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hitInfo;
+            if (Physics.Raycast(myRay, out hitInfo, 100, whatCanBeClickedOn))
+            {
+                myAgent.SetDestination(hitInfo.point);
+            }
         }
     }
 }
