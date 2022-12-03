@@ -17,5 +17,34 @@ public class ChopAction : MonoBehaviour
     void Chopping()
     {
         Debug.Log("Chopping event");
+        GameObject player = GetComponent<GameObject>();
+        // Vector3 distanceToPlayer = player.position - transform.position;
+
+        // if (GetComponent<GameObject>().transform < )
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        Debug.Log("Trigger");
+        //GameObject player = GetComponent<GameObject>();
+        //Transform transform = GetComponent<GameObject>().transform;
+        foreach (Transform child in transform.GetComponentsInChildren<Transform>())
+        {
+            if(child.CompareTag("Tomato"))
+            {
+                Debug.Log("Close to chopping and are holding a tomato");
+            }
+        }
+        /*foreach (Transform child in transform)
+        {
+            if (child.tag == "Tomato")
+            {
+                Debug.Log("Tomato obtained");
+            }
+        }*/
+        /*if (GetComponentInChildren<GameObject>().CompareTag("Tomato"))
+        {
+            Debug.Log("Tomato obtained");
+        }*/
     }
 }
