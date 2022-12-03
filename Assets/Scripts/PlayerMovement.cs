@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Player : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public LayerMask whatCanBeClickedOn;
     private NavMeshAgent myAgent;

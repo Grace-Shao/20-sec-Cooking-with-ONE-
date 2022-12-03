@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
-    public delegate void ChopItemEvent();
-    public static event ChopItemEvent onChop;
+    public delegate void ActivateChopAction();
+    public static event ActivateChopAction onChop;
     
     void Update()
     {
