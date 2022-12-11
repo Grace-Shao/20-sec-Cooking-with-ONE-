@@ -889,7 +889,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23804
+  m_Name: pb_Mesh23802
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1584,5 +1584,6 @@ PrefabInstance:
       propertyPath: itemContainer
       value: 
       objectReference: {fileID: 1797989031}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7140497537488376219, guid: 5f25738f839e13347ac2dbd585d6678b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5f25738f839e13347ac2dbd585d6678b, type: 3}

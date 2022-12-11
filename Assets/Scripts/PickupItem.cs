@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickupItem : MonoBehaviour
 {
     // should these all be public?
-    public Rigidbody rb;
+    //public Rigidbody rb;
     public BoxCollider coll;
     public Transform player, itemContainer;
 
@@ -44,7 +44,8 @@ public class PickupItem : MonoBehaviour
         transform.localScale = Vector3.one;
 
         // make rigidBody kinematic (so item doesn't move anymore) and BoxCollider a trigger
-        rb.isKinematic = true;
+        //rb.isKinematic = true;
+        //rb.detectCollisions = false;
         coll.isTrigger = true;
     }
 
@@ -57,7 +58,8 @@ public class PickupItem : MonoBehaviour
         transform.SetParent(null);
 
         // make rigidBody not kinematic and BoxCollider normal
-        rb.isKinematic = false;
+        //rb.isKinematic = false;
+        //rb.detectCollisions = true;
         coll.isTrigger = false;
     }
 }

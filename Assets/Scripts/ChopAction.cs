@@ -18,9 +18,7 @@ public class ChopAction : MonoBehaviour
     {
         Debug.Log("Chopping event");
         GameObject player = GetComponent<GameObject>();
-        // Vector3 distanceToPlayer = player.position - transform.position;
-
-        // if (GetComponent<GameObject>().transform < )
+        
     }
 
     private void OnTriggerEnter(Collider collision)
