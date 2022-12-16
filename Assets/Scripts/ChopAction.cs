@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChopAction : MonoBehaviour
 {
+    public GameObject tomatoSlices; // may be bad programming
     void OnEnable()
     {
         EventManager.onChop += Chopping;
@@ -46,6 +47,7 @@ public class ChopAction : MonoBehaviour
                 tomatoSpotOnBoard = cuttingBoard.transform.GetChild(0);
                 tomato.parent = tomatoSpotOnBoard;
                 tomato.position = tomatoSpotOnBoard.position;
+                Instantiate(tomatoSlices, tomatoSpotOnBoard.transform.position, Quaternion.identity); // may be bad programming
             }
         }
 
