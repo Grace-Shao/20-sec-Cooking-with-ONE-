@@ -41,7 +41,6 @@ public class PickupItem : MonoBehaviour
         transform.SetParent(itemContainer);
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.Euler(Vector3.zero);
-        transform.localScale = Vector3.one;
 
         // make rigidBody kinematic (so item doesn't move anymore) and BoxCollider a trigger
         //rb.isKinematic = true;
