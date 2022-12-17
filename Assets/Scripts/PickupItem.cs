@@ -13,14 +13,12 @@ public class PickupItem : MonoBehaviour
     public float dropForwardForce, dropUpwardForce;
 
     public bool equipped;
-    public static bool slotFull;
-
     // Start is called before the first frame update
     void Update()
     {
         // Check if player is in range and "E" is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
-        if (!equipped && distanceToPlayer.magnitude <= pickupRange && Input.GetKeyDown(KeyCode.E) && !slotFull)
+        if (!equipped && distanceToPlayer.magnitude <= pickupRange && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Picked up");
             Pickup();
@@ -35,7 +33,7 @@ public class PickupItem : MonoBehaviour
 
     private void Pickup()
     {
-        equipped = slotFull = true;
+        equipped = true;
 
         // make weapon a chold of the camera and move it to the default position
         transform.SetParent(itemContainer);
@@ -51,7 +49,7 @@ public class PickupItem : MonoBehaviour
     // why does boxCollider need to be a trigger
     private void Drop()
     {
-        equipped = slotFull = false;
+        equipped = false;
 
         // set parent to null (parent used to be itemContainer)
         transform.SetParent(null);
