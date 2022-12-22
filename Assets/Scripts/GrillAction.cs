@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GrillAction : MonoBehaviour
 {
+    public GameObject flameThrower;
     void OnEnable()
     {
         EventManager.onChop += Grilling;
@@ -16,7 +17,7 @@ public class GrillAction : MonoBehaviour
 
     void Grilling()
     {
-        
+        flameThrower.SetActive(true);
     }
 
 }

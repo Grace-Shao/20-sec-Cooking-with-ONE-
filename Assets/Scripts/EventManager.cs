@@ -23,9 +23,9 @@ public class EventManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
-            Debug.Log("Clicked G for onGrill");
             if (onGrill != null)
             {
+                Debug.Log("Clicked G for onGrill");
                 onGrill();
             }
         }
