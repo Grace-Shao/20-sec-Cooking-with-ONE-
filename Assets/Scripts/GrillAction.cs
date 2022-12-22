@@ -7,17 +7,24 @@ public class GrillAction : MonoBehaviour
     public GameObject flameThrower;
     void OnEnable()
     {
-        EventManager.onChop += Grilling;
+        EventManager.onGrill += Grilling;
     }
 
     void OnDisable()
     {
-        EventManager.onChop -= Grilling;
+        EventManager.onGrill -= Grilling;
     }
 
     void Grilling()
     {
-        flameThrower.SetActive(true);
+        // if flamethrower is active, turn it off. else turn it on
+        if(flameThrower.activeSelf)
+        {
+            flameThrower.SetActive(false);
+        } else
+        {
+            flameThrower.SetActive(true);
+        }
     }
 
 }
