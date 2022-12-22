@@ -10,8 +10,6 @@ public class EventManager : MonoBehaviour
     public delegate void ActivateGrillAction();
     public static event ActivateChopAction onGrill;
 
-    //bool grillClicked = false;
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
@@ -29,17 +27,6 @@ public class EventManager : MonoBehaviour
             {
                 Debug.Log("Clicked G for onGrill");
                 onGrill();
-                // toggle that button
-                /*grillClicked = !grillClicked;
-                if (grillClicked)
-                {
-                    Debug.Log("Clicked G for onGrill");
-                    onGrill();
-                } else
-                {
-                    onGrill.OnDisable();
-                    //onGrill.
-                }*/
             }
         }
     }
