@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChopAction : MonoBehaviour
 {
-    public GameObject tomatoSlices; // may be bad programming
+    [SerializeField] private GameObject tomatoSlices; // may be bad programming
     void OnEnable()
     {
         EventManager.onChop += Chopping;
