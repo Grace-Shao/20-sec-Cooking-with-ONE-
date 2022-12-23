@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class PickupItem : MonoBehaviour
 {
-    // should these all be public?
     //public Rigidbody rb;
-    public BoxCollider coll;
-    public Transform player, itemContainer;
+    [SerializeField] private BoxCollider coll;
+    [SerializeField] private Transform player, itemContainer;
 
-    public float pickupRange;
-    public float dropForwardForce, dropUpwardForce;
+    [SerializeField] private float pickupRange;
+    [SerializeField] private float dropForwardForce, dropUpwardForce;
 
-    public bool equipped;
+    [SerializeField] private bool equipped;
     // Start is called before the first frame update
     void Update()
     {
