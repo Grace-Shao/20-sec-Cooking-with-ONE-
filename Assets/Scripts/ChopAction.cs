@@ -50,6 +50,9 @@ public class ChopAction : MonoBehaviour
                 // 1 second wait after destroy (can only destroy game obj, not transform)
                 Object.Destroy(tomato.gameObject, 1);
                 Instantiate(tomatoSlices, tomatoSpotOnBoard.transform.position, Quaternion.identity); // may be bad programming
+                
+                // cant chop again
+                OnDisable();
             }
         }
 

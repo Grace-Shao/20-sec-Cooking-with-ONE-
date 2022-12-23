@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EndingsManager : MonoBehaviour
 {
+    // https://youtu.be/TWxXD-UpvSg good link on unity events
     // Start is called before the first frame update
     void Start()
     {
