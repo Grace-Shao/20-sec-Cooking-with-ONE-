@@ -35,10 +35,13 @@ public class CombineIngredientsAction : MonoBehaviour
             // if plate has nothing in it's contain, put that child obj into the container
             if (foodContainer.childCount == 0)
             {
+                itemContainer.GetChild(0).position = foodContainer.position;
                 itemContainer.GetChild(0).parent = foodContainer;
             }
             else // if plate alr has something in it's container, transform into pizza
             {
+                Object.Destroy(itemContainer.GetChild(0).gameObject); // destroy the ingrdients
+                Object.Destroy(foodContainer.GetChild(0).gameObject);
                 Instantiate(pizza, itemContainer.transform.position, Quaternion.identity);
             }         
         }
