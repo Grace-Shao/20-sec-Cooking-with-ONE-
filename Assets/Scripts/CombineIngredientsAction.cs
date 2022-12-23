@@ -8,6 +8,9 @@ using UnityEngine;
 public class CombineIngredientsAction : MonoBehaviour
 {
     [SerializeField] private Transform plate;
+    [SerializeField] private Transform itemContainer;
+    [SerializeField] private Transform pizza;
+
     void OnEnable()
     {
         EventManager.onCombineIngredients += Combine;
@@ -23,16 +26,25 @@ public class CombineIngredientsAction : MonoBehaviour
         Vector3 playerPosition = GetComponent<Transform>().position;
         float playerToPlateRange = 2f;
         float distance = (playerPosition - plate.position).magnitude;
+        // access the first child
+        Transform foodContainer = plate.GetChild(0);
 
-        // if close to plate
+        // if close to plate (only things that u can pick up is tomato and cheese so picking those up is satisfied)
         if (distance < playerToPlateRange)
         {
-
+            // if plate has nothing in it's contain, put that child obj into the container
+            if (foodContainer.childCount == 0)
+            {
+                itemContainer.GetChild(0).parent = foodContainer;
+            }
+            else // if plate alr has something in it's container, transform into pizza
+            {
+                Instantiate(pizza, itemContainer.transform.position, Quaternion.identity);
+            }         
         }
-        
-        // if child one has tomato or cheese, put tomato or cheese on plate but child 2 is empty
-        //      if child 1 has the other ingredient, combine to make pizza
-        // if both child one and child two have things in them, being near plate will make pizza
+
+        // if the plate has pizza, disable the combine action
+
 
     }
 }

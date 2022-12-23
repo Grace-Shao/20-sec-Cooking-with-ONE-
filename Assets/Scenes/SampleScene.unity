@@ -649,6 +649,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173554628}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &174610024 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6426704772920256730, guid: 409b5c55c5767934cb227d9813bbf6a9, type: 3}
+  m_PrefabInstance: {fileID: 2352262701576227029}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &187429350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,6 +1209,37 @@ Transform:
   - {fileID: 735865413}
   m_Father: {fileID: 0}
   m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &551184232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 551184233}
+  m_Layer: 0
+  m_Name: foodContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &551184233
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551184232}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0.0054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 174610024}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &577434236 stripped
 Transform:
@@ -2635,6 +2671,7 @@ GameObject:
   - component: {fileID: 1594880729}
   - component: {fileID: 1594880730}
   - component: {fileID: 1594880731}
+  - component: {fileID: 1594880732}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2774,6 +2811,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flameThrower: {fileID: 660518357}
+--- !u!114 &1594880732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594880723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea79867253f8154db7cc72561beec9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plate: {fileID: 174610024}
+  itemContainer: {fileID: 1797989031}
+  pizza: {fileID: 0}
 --- !u!1 &1716311111
 GameObject:
   m_ObjectHideFlags: 0
@@ -3600,7 +3652,7 @@ PrefabInstance:
       objectReference: {fileID: 1594880727}
     - target: {fileID: 1849835740716622965, guid: 5f25738f839e13347ac2dbd585d6678b, type: 3}
       propertyPath: pickupRange
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1849835740716622965, guid: 5f25738f839e13347ac2dbd585d6678b, type: 3}
       propertyPath: itemContainer
@@ -4307,7 +4359,7 @@ PrefabInstance:
       objectReference: {fileID: 131237678}
     - target: {fileID: 2148896830097862322, guid: 10f32cefccc5a0f48b74c23f485374ef, type: 3}
       propertyPath: m_VersionIndex
-      value: 1055
+      value: 1058
       objectReference: {fileID: 0}
     - target: {fileID: 2148896830211763033, guid: 10f32cefccc5a0f48b74c23f485374ef, type: 3}
       propertyPath: m_Mesh
@@ -4323,11 +4375,15 @@ PrefabInstance:
       objectReference: {fileID: 476242063}
     - target: {fileID: 2148896830211763037, guid: 10f32cefccc5a0f48b74c23f485374ef, type: 3}
       propertyPath: m_VersionIndex
-      value: 1525
+      value: 1528
       objectReference: {fileID: 0}
     - target: {fileID: 2148896830973052798, guid: 10f32cefccc5a0f48b74c23f485374ef, type: 3}
       propertyPath: m_Name
       value: Tomato Slices
+      objectReference: {fileID: 0}
+    - target: {fileID: 2148896830973052798, guid: 10f32cefccc5a0f48b74c23f485374ef, type: 3}
+      propertyPath: m_TagString
+      value: TomatoSlices
       objectReference: {fileID: 0}
     - target: {fileID: 2148896830973052799, guid: 10f32cefccc5a0f48b74c23f485374ef, type: 3}
       propertyPath: m_RootOrder
@@ -4379,7 +4435,7 @@ PrefabInstance:
       objectReference: {fileID: 52605943}
     - target: {fileID: 2148896831372809537, guid: 10f32cefccc5a0f48b74c23f485374ef, type: 3}
       propertyPath: m_VersionIndex
-      value: 622
+      value: 625
       objectReference: {fileID: 0}
     - target: {fileID: 2148896831372809597, guid: 10f32cefccc5a0f48b74c23f485374ef, type: 3}
       propertyPath: m_Mesh
@@ -4403,7 +4459,7 @@ PrefabInstance:
       objectReference: {fileID: 1412702234}
     - target: {fileID: 2148896831597506982, guid: 10f32cefccc5a0f48b74c23f485374ef, type: 3}
       propertyPath: m_VersionIndex
-      value: 940
+      value: 943
       objectReference: {fileID: 0}
     - target: {fileID: 7493619391211105944, guid: 10f32cefccc5a0f48b74c23f485374ef, type: 3}
       propertyPath: coll
@@ -7309,6 +7365,10 @@ PrefabInstance:
     - target: {fileID: 7154314657068247197, guid: 4954ac26fad45da45b52ea424646f616, type: 3}
       propertyPath: m_Name
       value: cheese
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154314657068247197, guid: 4954ac26fad45da45b52ea424646f616, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7494812120611828263, guid: 4954ac26fad45da45b52ea424646f616, type: 3}
       propertyPath: m_RootOrder

@@ -34,7 +34,7 @@ public class EventManager : MonoBehaviour
             if(itemContainer.transform.childCount > 0)
             {
                 Transform child1 = itemContainer.transform.GetChild(0);
-                if (child1.CompareTag("Tomato") || child1.CompareTag("Cheese")) // and near a plate later
+                if (child1.CompareTag("TomatoSlices") || child1.CompareTag("Cheese")) // and near a plate later
                 {
                     if (onCombineIngredients != null)
                     {
