@@ -6,6 +6,8 @@ public class DetectFire : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private float burntLevel;
+    [SerializeField] private float burnStrength;
+
 
     void Start()
     {
@@ -21,7 +23,7 @@ public class DetectFire : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         Debug.Log("particle collision");
-        burntLevel -= 1;
+        burntLevel -= burnStrength * Time.deltaTime;
         Debug.Log(burntLevel);
     }
 }
