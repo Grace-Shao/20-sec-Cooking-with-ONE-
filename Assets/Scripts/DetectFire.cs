@@ -5,6 +5,8 @@ using UnityEngine;
 public class DetectFire : MonoBehaviour
 {
     // Start is called before the first frame update
+    [SerializeField] private float burntLevel;
+
     void Start()
     {
         
@@ -19,5 +21,7 @@ public class DetectFire : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         Debug.Log("particle collision");
+        burntLevel -= 1;
+        Debug.Log(burntLevel);
     }
 }

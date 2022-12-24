@@ -2339,6 +2339,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7343701929510966305, guid: 4e306f2ec3b548f4492e4d3449b420eb, type: 3}
+      propertyPath: burntLevel
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3662583186994513926, guid: 4e306f2ec3b548f4492e4d3449b420eb, type: 3}
       propertyPath: m_Name
       value: Pizza Variant
