@@ -6,7 +6,7 @@ using TMPro;
 
 public class CountDownTimer : MonoBehaviour
 {
-    float currentTime = 0f;
+    static public float currentTime = 0f;
     float startingTime = 20f;
 
     // same as private but we can see it in field

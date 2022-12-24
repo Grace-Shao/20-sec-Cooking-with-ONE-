@@ -15,6 +15,16 @@ public class EndingsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (CountDownTimer.currentTime < 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        }
+        if (DetectFire.burntLevel < 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+        //if everything catches on fire, bad ending...
+
     }
 }
