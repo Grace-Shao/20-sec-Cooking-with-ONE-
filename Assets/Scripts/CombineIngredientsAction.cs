@@ -42,12 +42,10 @@ public class CombineIngredientsAction : MonoBehaviour
             {
                 Object.Destroy(itemContainer.GetChild(0).gameObject); // destroy the ingrdients
                 Object.Destroy(foodContainer.GetChild(0).gameObject);
-                Instantiate(pizza, itemContainer.transform.position, Quaternion.identity);
-            }         
+                Instantiate(pizza, foodContainer.transform.position, Quaternion.identity);
+                // if the plate has pizza, disable the combine action
+                OnDisable();
+            }
         }
-
-        // if the plate has pizza, disable the combine action
-
-
     }
 }
