@@ -8,18 +8,6 @@ public class DetectFire : MonoBehaviour
     static public float burntLevel; // change to private later but static global variable works for now
     [SerializeField] private float burnStrength;
 
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnParticleCollision(GameObject other)
     {
         Debug.Log("particle collision");
