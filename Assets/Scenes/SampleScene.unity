@@ -855,7 +855,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78884
+  m_Name: pb_Mesh23938
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1591,7 +1591,7 @@ GameObject:
   - component: {fileID: 825329669}
   - component: {fileID: 825329668}
   m_Layer: 0
-  m_Name: LevelLoader
+  m_Name: EndingsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3398,6 +3398,7 @@ GameObject:
   - component: {fileID: 2050809774514461212}
   - component: {fileID: 1079662025864700289}
   - component: {fileID: 2050809774514461213}
+  - component: {fileID: 2050809774514461214}
   m_Layer: 0
   m_Name: Cube.008
   m_TagString: Untagged
@@ -4454,6 +4455,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.010444583, y: 0.010570105, z: 0.009821644}
   m_Center: {x: -0.0022222914, y: 0.0022850528, z: 0.001910821}
+--- !u!114 &2050809774514461214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281855663677421940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3a4c0ba50bd134fa31376301680237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mediumFlame: {fileID: 1478314613700728, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
 --- !u!1 &2076850631780962770
 GameObject:
   m_ObjectHideFlags: 0
@@ -6441,6 +6455,7 @@ GameObject:
   - component: {fileID: 1434018956743500091}
   - component: {fileID: 3313374522881159208}
   - component: {fileID: 2575221472108751939}
+  - component: {fileID: 5652247740700154111}
   m_Layer: 0
   m_Name: fridge
   m_TagString: Untagged
@@ -6448,6 +6463,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5652247740700154111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5652247740700154110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3a4c0ba50bd134fa31376301680237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mediumFlame: {fileID: 1478314613700728, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
 --- !u!4 &5680519943098613146
 Transform:
   m_ObjectHideFlags: 0
@@ -7165,6 +7193,7 @@ GameObject:
   - component: {fileID: 215592837755353436}
   - component: {fileID: 1558643247670883982}
   - component: {fileID: 7178114114230317196}
+  - component: {fileID: 7178114114230317197}
   m_Layer: 0
   m_Name: Cube.009
   m_TagString: Untagged
@@ -7186,6 +7215,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2477511411847689622, guid: dd21b8a2b0d04074ea6339902b58309d, type: 3}
+--- !u!114 &7178114114230317197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7178114114230317195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3a4c0ba50bd134fa31376301680237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mediumFlame: {fileID: 1478314613700728, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
 --- !u!1 &7183117987373857575
 GameObject:
   m_ObjectHideFlags: 0
@@ -7845,6 +7887,7 @@ GameObject:
   - component: {fileID: 3010172808296682099}
   - component: {fileID: 8544783547149507182}
   - component: {fileID: 8544783547149507183}
+  - component: {fileID: 8544783547149507184}
   m_Layer: 0
   m_Name: Cube.002
   m_TagString: Untagged
@@ -8080,6 +8123,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.012542091, y: 0.012066949, z: 0.016455939}
   m_Center: {x: 0.0013973487, y: 0.0030334748, z: 0.0030365542}
+--- !u!114 &8544783547149507184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8416272007064386630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3a4c0ba50bd134fa31376301680237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mediumFlame: {fileID: 1478314613700728, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
 --- !u!23 &8567716999660448449
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8337,6 +8393,7 @@ GameObject:
   - component: {fileID: 8894691112148632225}
   - component: {fileID: 6745302440030665324}
   - component: {fileID: 8894691112148632226}
+  - component: {fileID: 8894691112148632227}
   m_Layer: 0
   m_Name: Cube.006
   m_TagString: Untagged
@@ -8373,6 +8430,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.010444583, y: 0.010570105, z: 0.009663578}
   m_Center: {x: -0.0022222914, y: 0.0022850528, z: 0.0018317878}
+--- !u!114 &8894691112148632227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8757042447178833607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3a4c0ba50bd134fa31376301680237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mediumFlame: {fileID: 1478314613700728, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
 --- !u!4 &8906773800355380596
 Transform:
   m_ObjectHideFlags: 0
@@ -8458,6 +8528,7 @@ GameObject:
   - component: {fileID: 1703912660271871818}
   - component: {fileID: 8102382927379685912}
   - component: {fileID: 9014776603612257841}
+  - component: {fileID: 9014776603612257842}
   m_Layer: 0
   m_Name: Cube.007
   m_TagString: Untagged
@@ -8478,6 +8549,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.011700371, y: 0.010570107, z: 0.009663581}
   m_Center: {x: -0.0015943969, y: 0.0022850533, z: 0.0018317881}
+--- !u!114 &9014776603612257842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014776603612257840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3a4c0ba50bd134fa31376301680237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mediumFlame: {fileID: 1478314613700728, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
 --- !u!23 &9024318773102074658
 MeshRenderer:
   m_ObjectHideFlags: 0

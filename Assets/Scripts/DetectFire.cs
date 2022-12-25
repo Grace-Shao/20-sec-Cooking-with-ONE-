@@ -5,7 +5,7 @@ using UnityEngine;
 public class DetectFire : MonoBehaviour
 {
     // Start is called before the first frame update
-    static public float burntLevel; // change to private later but static global variable works for now
+    static public float burntLevel = 100; // change to private later but static global variable works for now
     [SerializeField] private float burnStrength;
 
     private void OnParticleCollision(GameObject other)
