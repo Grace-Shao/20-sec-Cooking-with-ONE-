@@ -87,5 +87,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90059cbcbb64e5048a574a5b39104499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  burntLevel: 100
-  burnStrength: 100
+  burnStrength: 260

@@ -15,8 +15,8 @@ public class EndingsManager : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
-        // good ending
-        if (DetectFire.burntLevel < 0)
+        // good ending (cooked pizza and no fires)
+        if (DetectFire.burntLevel < 0 && GameObject.FindWithTag("MediumFire") == null)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

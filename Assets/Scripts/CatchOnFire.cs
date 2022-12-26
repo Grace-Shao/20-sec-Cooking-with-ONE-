@@ -13,6 +13,7 @@ public class CatchOnFire : MonoBehaviour
         {
             // attach a flame effect on it
             Instantiate(mediumFlame, transform.position, Quaternion.identity);
+            hasFire = true;
         }
     }
 }
