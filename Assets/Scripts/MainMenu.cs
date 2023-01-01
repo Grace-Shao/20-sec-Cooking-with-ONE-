@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-	public Text Score;
-
 	public void LoadScene(int index)
 	{
 		// load the next scene into scene manager
@@ -28,20 +26,12 @@ public class MainMenu : MonoBehaviour
 	public void PlayAgain()
 	{
 		// load the next scene into scene manager
-		SceneManager.LoadScene("BossBattle");
+		SceneManager.LoadScene(0);
 	}
 
 	public void QuitGame()
 	{
 		// load the next scene into scene manager
 		Application.Quit();
-	}
-
-	public void Start()
-	{
-		if (Score)
-		{
-			Score.text = "SCORE: " + PlayerPrefs.GetFloat("Score", 100);
-		}
 	}
 }
