@@ -388,6 +388,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1100196144714248848, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1100196144844399554, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -475,6 +479,38 @@ PrefabInstance:
     - target: {fileID: 1100196144844399558, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889036800206220630, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889036800206220630, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889036800206220630, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889036800206220630, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889036800206220630, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -240
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889036800206220630, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199286177896179791, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199286177896179791, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a5766cb487e9b84e9d8504f7377d84a, type: 3}

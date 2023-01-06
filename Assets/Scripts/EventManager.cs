@@ -19,7 +19,7 @@ public class EventManager : MonoBehaviour
     void Update()
     {
         // can only chop once bc chop event unsubscribes
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             if (onChop != null)
             {
@@ -29,7 +29,7 @@ public class EventManager : MonoBehaviour
         }
         // combine ingredients action
         // if the first child is a tomato or a cheese, combine ingredients
-        if (Input.GetKeyDown(KeyCode.R)) // r is the generic grab
+        if (Input.GetKeyDown(KeyCode.A)) // r is the generic grab
         {
             if(itemContainer.transform.childCount > 0)
             {
@@ -47,7 +47,7 @@ public class EventManager : MonoBehaviour
         }
             
 
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             if (onGrill != null)
             {

@@ -17,7 +17,7 @@ public class PickupItem : MonoBehaviour
     {
         // Check if player is in range and "E" is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
-        if (!equipped && distanceToPlayer.magnitude <= pickupRange && Input.GetKeyDown(KeyCode.E))
+        if (!equipped && distanceToPlayer.magnitude <= pickupRange && Input.GetKeyDown(KeyCode.W))
         {
             Debug.Log("Picked up");
             Pickup();
