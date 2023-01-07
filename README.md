@@ -10,6 +10,6 @@ You are the robot ONE trying to secretly cook a pizza for Eva. However, you’re
 
 # Controls
 Click on a floor tile to move ONE!
-*W - pick up ingredients
-*A - slice, place ingredients on plates/chopping board
-*D - “cook” the pizza until crispy!
+* W - pick up ingredients
+* A - slice, place ingredients on plates/chopping board
+* D - “cook” the pizza until crispy!
