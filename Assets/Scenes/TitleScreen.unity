@@ -542,8 +542,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Click on a floor tile to move! Be near ingredients to interact!\n-> W
-    - pick up ingredients\r\n-> A - slice, place ingredients on chopping board\r\n->
-    S - drop ingredients\r\n-> D - \u201Ccook\u201D the pizza until crispy!\r\n\n"
+    - pick up ingredients\r\n-> A - slice, place ingredients on plates/chopping board\r\n->
+    D - \u201Ccook\u201D the pizza until crispy!\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7837,8 +7837,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 56e4f0f721022bf4a8ca7dc301c8d5fb, type: 2}
+  m_sharedMaterial: {fileID: 6179686398009434462, guid: 56e4f0f721022bf4a8ca7dc301c8d5fb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7862,8 +7862,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

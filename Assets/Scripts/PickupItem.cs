@@ -23,11 +23,12 @@ public class PickupItem : MonoBehaviour
             Pickup();
         }
 
-        // Drop if equipped and "Q" is pressed
+        // drop function is disabled for now, but it is a working function!
+        /*// Drop if equipped and "Q" is pressed
         if (equipped && Input.GetKeyDown(KeyCode.Q))
         {
             Drop();
-        }
+        }*/
     }
 
     private void Pickup()
@@ -54,7 +55,6 @@ public class PickupItem : MonoBehaviour
         
     }
 
-    // why does boxCollider need to be a trigger
     private void Drop()
     {
         equipped = false;
